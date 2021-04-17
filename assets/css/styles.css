@@ -1,0 +1,324 @@
+.container {
+    padding: 0.5rem;
+  }
+  
+  .header {
+    padding: 0 0.8em;
+    background-color: #B58B2B;
+  }
+  
+  .logo__title {
+    margin-bottom: 0.5rem;
+  }
+  
+  .filters__task--completion.buttons {
+    margin-bottom: 0.5rem;
+  }
+  
+  .filters__task--archived {
+    margin-top: 1rem;
+  }
+  
+  .task {
+    margin: 1.5rem 0 0 0;
+  }
+  
+  .task,
+  .task__button.button,
+  .task__name-edit {
+    font-size: 0.8rem;
+  }
+  
+  .task__content {
+    /*CSS perso*/background-color: white;
+    /*CSS perso*/box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    /*CSS perso*/color: #4a4a4a;
+    padding: 0.5rem;
+    border: solid 1px #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  
+  .task__name {
+    font-weight: 400;
+    width: 35%;
+  }
+  
+  .task__name-edit {
+    display: none;
+  }
+  
+  .task__category {
+    color: #b1b1b1;
+  }
+  
+  .task__buttons {
+    margin-left: 1rem;
+  }
+  
+  .progress-bar {
+    height: 0.4rem;
+    background-color: #EDEDED;
+  }
+  
+  .progress-bar__level {
+    height: 0.4rem;
+    background-color: #C2962F;
+  }
+  
+  .task__button--desarchive,
+  .task__button--incomplete,
+  .task__button--delete {
+    display: none;
+  }
+  
+  .task--complete .task__name-display {
+    text-decoration: line-through #708090;
+  }
+  
+  .task--complete .task__button--validate {
+    display: none;
+  }
+  
+  .task--complete .task__button--incomplete {
+    display: inline-block;
+  }
+  
+  .task--edit .task__name-display {
+    display: none;
+  }
+  
+  .task--edit .task__name-edit {
+    display: block;
+    width: 90%;
+    /*CSS perso*/ font-family:'Ubuntu', sans-serif;
+  }
+  
+  .task--archive .task__content {
+    background-color: #f7f7f7;
+    border: none;
+  }
+  
+  .task--archive .task__name {
+    color: hsl(0, 0%, 69%);
+  }
+  
+  .task--archive .progress-bar__level {
+    background-color: #b1b1b1;
+  }
+  
+  .task--archive .task__button--validate,
+  .task--archive .task__button--modify,
+  .task--archive .task__button--archive {
+    display: none;
+  }
+  
+  .task--archive .task__button--desarchive,
+  .task--archive .task__button--delete {
+    display: inline-block;
+  }
+  
+  .task--add .task__content {
+    border-color:#362E1D;
+  }
+  
+  .task--add .task__name {
+    width: 100%;
+  }
+  
+  .task--add .task__category {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .task--add .task__name-edit {
+    display: block;
+    width: 90%;
+  }
+  
+  .task--add .task__buttons {
+    margin: 0.5rem 0 0 0;
+  }
+  
+  .task--add .task__button {
+    font-size: 1rem;
+  }
+  
+  @media screen and (min-width: 640px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .task,
+    .task__button.button,
+    .task__name-edit {
+      font-size: 0.9rem;
+    }
+  
+    .task__content {
+      padding: 1rem;
+    }
+  
+    .task__name {
+      font-size: 1rem;
+    }
+  
+    .task--add .task__name {
+      width: 50%;
+    }
+  
+    .task--add .task__category {
+      margin: 0;
+      width: 30%;
+    }
+  
+    .task--add .task__buttons {
+      width: 20%;
+      text-align: right;
+      margin: 0;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo__title {
+      margin-bottom: 0;
+    }
+    
+    
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .filters__task--completion,
+    .filters__task--category {
+      margin-right: 1rem;
+    }
+    
+    .filters__task--archived {
+      margin-top: 0;
+    }
+  
+    .filters__task--completion {
+      margin-bottom: 0;
+      margin-top: 1rem;
+    }
+  
+    .task,
+    .task__button.button,
+    .task__name-edit.input {
+      font-size: 1rem;
+    }
+  
+    .task__name {
+      width: 50%;
+    }
+  
+    .task__name-edit {
+      width: 60%;
+    }
+  }
+/*============= CSS PERSO ========================*/
+body{
+    background-image: url("../images/background3.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding:1em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer{
+  border-top:1px solid #708090;
+  margin-top:2em;
+  padding-top:2em;
+}
+
+
+nav .navbar-link::after{
+ border-color:#ffffff !important;
+}
+
+a.white{
+    color:#ffffff;
+}
+
+a.white:hover{
+    color:#362E1D !important;
+}
+
+
+.logo h1{
+    font-family: 'Playball', cursive;
+    color:#ffffff;
+    font-size:3em;
+}
+
+.logo h1:hover{
+  color: #362E1D !important;
+}
+
+
+.button.check, .button.review{
+    background-color:#C1A768;
+    color:#ffffff;
+    border:none;
+}
+
+.button.check:hover, .button.review:hover{
+    background-color:#ababab;
+    color:#ffffff;
+    border:none;
+}
+
+.button.edit, .button.unarchived{
+    background-color:#82641F;
+    color:#ffffff;
+    border:none;
+}
+
+.button.edit:hover, .button.unarchived:hover{
+    background-color:#6a6a6a;
+    color:#ffffff;
+    border:none;
+}
+
+
+.button.archived, .button.trash{
+    background-color:#362E1D;
+    color:#ffffff;
+    border:none;
+}
+
+.button.archived:hover, .button.trash:hover{
+    background-color:#323232;
+    color:#ffffff;
+    border:none;
+}
+
+
+.button.brown, .is-selected{
+  background-color:#755B1C !important;
+}
+
+.button.brown:hover{
+    background-color:#362E1D;
+  }
+
+.legend .button{
+    width:25px;
+    height:25px;
+    padding:1em;
+}
+
