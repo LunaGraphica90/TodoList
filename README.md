@@ -1,5 +1,7 @@
 # TodoList
 
+ ![TodoList](http://devweb.luna-graphica.fr/captures/TODOLIST.jpg) 
+
 ## L'objectif ?
 Mettre en place un petit site de gestion des tâches. Il ne contient qu'une seule et unique page, permettant de réaliser toutes les actions nécessaires.
 
