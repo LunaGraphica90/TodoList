@@ -9,7 +9,7 @@ Mettre en place un petit site de gestion des tâches. Il ne contient qu'une seul
 Thème libre. Utilisation de Bootstrapp et de CSS personnelles pour l'édition de la charte graphique. Mise en place des éléments grâce à un Wireframe fourni.
 
 ## Technologies utilisées
-HTML/CSS/JS/BOOTSTRAPP
+HTML/CSS/JS/BULMA
 
 ## Lien vers le site : 
 [TodoList](http://www.devweb.luna-graphica.fr/TodoList/)
